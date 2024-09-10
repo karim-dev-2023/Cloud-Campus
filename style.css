@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-family: 'Arial', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+   height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header img{
+    height: 30px;
+}
+
+header a,img{
+    padding: 10px;
+}
+header .iconUser{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logoGoogle{
+    margin-top: 6%;
+}
+.logoGoogle img{
+    height: 100px;
+}
+.barreDeRecherche{
+    position: relative;
+}
+.barreDeRecherche input[type=search]{
+    margin-top: 2%;
+    width: 40em;             
+    height: 50px;              
+    padding: 10px 20px;
+    border: 1px solid #dfe1e5; 
+    border-radius: 24px;       
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    font-size: 16px;          
+    transition: box-shadow 0.3s ease-in-out; 
+    text-align: left;
+    padding-left: 80px;
+}
+
+.barreDeRecherche .logo{
+    height: 50px;
+    position: absolute;
+    left: -15px;
+    top: 63%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+.barreDeRecherche .micLogo{
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 63%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+.raccourci{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.raccourci .plus{
+    text-align: center;
+    background-color: rgb(242 243 245);;
+    border-radius: 50%;
+    width: 50px;
+}
+.raccourci .plus p{
+   font-weight: 100;
+   font-size: xxx-large;
+}
+.raccourci .text{
+    margin-top: 8px;
+}
+footer{
+    margin-top: 450px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .customize{
+    margin-right: 20px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-items: center;
+    width: 220px;
+    border: 1px solid #dfe1e5; 
+    border-radius: 24px;       
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+.textcustomize{
+    color: #0064ffbf;
+    font-weight: bold;
+}
+footer .customize img{
+    height: 10px;
+}
+
+@media (max-width:750px) {
+    .container{
+        margin-top: 80px;
+    }
+    footer{
+        margin-top: 280px
+    }
+}
+
+@media (max-width:700px) {
+    .barreDeRecherche input[type=search]{
+        width: 35em;
+    }
+    header .iconUser {
+        margin-right: 5px;
+    }
+}
+
+@media  (max-width:582px){
+    .barreDeRecherche input[type=search]{
+        width: 20em;
+    }
+    .barreDeRecherche .micLogo{
+        right: -5px;
+    }
+}
