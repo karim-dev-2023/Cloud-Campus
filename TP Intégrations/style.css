@@ -2,6 +2,7 @@
 /* Pour la partie header */
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #F8F8FA;
 }
 header {
   display: flex;
@@ -9,6 +10,11 @@ header {
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
   padding: 10px;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  background-color: white;
 }
 .logo {
   width: 17%;
@@ -72,10 +78,9 @@ header {
 }
 /* Le Side bar */
 aside {
-  background-color: #0100390a;
   float: left;
-  width: 15%;
-  height: 1486px;
+  width: 230px;
+  height:calc(100vh-65px);
   padding: 20px;
 }
 aside nav .menu p {
@@ -136,6 +141,8 @@ main {
   padding: 30px;
   background-color: rgba(246, 248, 250, 1);
   height: 1486px;
+  margin-top: 77px;
+  width: calc(100% -230px);
 }
 main h1 {
   font-weight: 500;
@@ -188,6 +195,7 @@ main h1 {
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgba(214, 214, 214, 1);
+  padding-right: 35px;
 }
 .Statistics {
   display: flex;
