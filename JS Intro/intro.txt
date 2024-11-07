@@ -1,0 +1,19 @@
+ROLES DES LANGAGES
+------------------
+
+FRONTEND
+--------
+- HTML : Structure d'une page web (blocs, régions, médias..)
+- CSS  : Mise en forme (Couleur, tailles, bordures...)
+- JS   : Javascript : intéractivité, animations, création de site web complets
+
+BACKEND
+-------
+- PHP  : Fonctionnalités (Inscription, connexion, récupérations des données, formulaires ...) - (autres langages back : Python, Java, .NET ...) 
+- SQL  : Structure Query Language - MySQL (SGBD) - Communication avec les Base de données (Enregisrement, modification, supression et récupération des données)
+
+3 POSSIBILITES POUR FAIRE UN SITE WEB
+-------------------------------------
+- From Scratch : On part de zéro, le développeur construit tout lui même. Temps de dev très long, liberté totale.
+- Framework    : du code déja prêt, montée en compétence nécessaire
+- CMS          : Content Managing system : Wordpress

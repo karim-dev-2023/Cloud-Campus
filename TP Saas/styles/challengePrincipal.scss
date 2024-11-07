@@ -1,0 +1,127 @@
+$primary-backgorund-color: #6867ab;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+}
+body {
+  background-color: $primary-backgorund-color;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  nav {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo{
+      margin-left: 65px;
+    }
+    .options {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin-right: 65px;
+      a {
+        color: #486284;
+      }
+    }
+  }
+}
+
+main {
+  .sectionChallengePrincipal {
+    width: 80%;
+    margin: auto;
+    h1 {
+      font-size: 48px;
+      font-weight: 600;
+      color: white;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .subtitle {
+      margin: 20px 0;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    .challengesCards {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      gap: 40px;
+      article {
+        background-color: #d4d9fc;
+        padding: 10px;
+        width: 471px;
+        height: 277px;
+        border-radius: 10px;
+
+        .headerCard {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          height: 100px;
+
+          .starCards {
+            img {
+              height: 40px;
+            }
+          }
+          .textCards {
+            margin-left: 15px;
+            h2 {
+              font-weight: bold;
+            }
+            h3 {
+              margin-top: 5px;
+            }
+          }
+        }
+        .descriptionsCard {
+          p {
+            text-align: justify;
+            line-height: 30px;
+            padding: 10px;
+          }
+        }
+        .btnCards {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          a {
+            padding: 10px;
+            background-color: #ffb54d;
+            padding: 10px;
+            border-radius: 8px;
+            color: #404b5a;
+            font-weight: 700;
+            transition: 0.5s;
+            box-shadow: -1px 2px 1px black;
+            margin-right: 7px;
+          }
+          a:hover {
+            background-color: #ffd8a0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (width <= 1314px) {
+  main {
+    .sectionChallengePrincipal {
+      .challengesCards {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+

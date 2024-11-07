@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evènements</title>
+    <style>
+        * { transition: 1s ease; /* transition: left 2s ease; */ }
+        body { background-color: rgb(87, 87, 216); }
+        .conteneur { max-width: 1000px; margin: 0 auto; background-color: white; padding: 20px; }
+        .divs { width: 100px; height: 100px; margin-top: 100px; position: relative; }
+
+        #blockImage { width: 500px; margin: 0 auto; overflow: hidden; display: flex; }
+        img { width: 100%; position: relative; top: 0; left: 0; }
+
+        #next { padding: 10px 25px; background-color:rgb(87, 87, 216); text-decoration: none; color: white; }
+        #next:hover { background-color:rgb(95, 95, 450); } 
+
+        #carousel { position: relative; overflow: hidden; height: 300px;  }
+        #carousel img { position: absolute; top: 0; left: 0; opacity: 0; }
+        #carousel img:first-child { opacity: 1; }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteneur">
+        <!-- Imprimer la page -->
+        <a href="" onclick="window.print()">Imprimer la page</a>
+
+        <hr>
+
+        <div id="div1" class="divs" style="background-color: red;"></div>
+
+        <hr>
+
+        <div id="div2" class="divs" style="background-color: indigo; top: 0px; left: 0px;"></div>
+
+        <hr>
+
+        <div id="div3" class="divs" style="background-color: darksalmon; top: 0px; left: 0px;"></div>
+
+
+        <hr>
+
+        <div id="blockImage">
+            <img src="img/image1.jpg" alt="une image 1 blablabla">
+            <img src="img/image2.jpg" alt="une image 2 blablabla">
+        </div>
+
+        <hr>
+
+        <div id="carousel" data-image="image1">
+            <img src="img/image1.jpg" alt="une image 1 blablabla">
+            <img src="img/image2.jpg" alt="une image 2 blablabla">
+            <img src="img/image3.jpg" alt="une image 3 blablabla">
+            <img src="img/image4.jpg" alt="une image 4 blablabla">
+        </div>
+        <br>
+        <a href="" id="next">Next</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <!-- <script src="evenements.js"></script> -->
+    <script src="evenement-correction.js"></script>
+</body>
+</html>

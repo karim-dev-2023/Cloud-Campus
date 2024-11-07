@@ -1,0 +1,19 @@
+// EXERCICE Image: 
+// récupérer 5 images avec la même extension (jpg, jpeg, png ou webp). et les rennomer de cette manière :
+// image1.jpg image2.jpg image3.jpg image4.jpg image5.jpg
+// 1 : afficher l'image1 dans la page web avec une balise <img src="" >
+// 2 : afficher 5 fois l'image1 dans la page web avec une seule balise img src (une boucle)
+// 3 : afficher les 5 images dans la page web toujours avec une seule balise img src dans votre code (indice : une boucle + ...)
+// 4 : afficher les 5 images de manière aléatoire (il est possible d'avoir plusieurs fois la même image)
+//--------
+// EXERCICE Pyramide
+// Faire un affichage du tableau suivant : [1, 2, 3, 4, 5, 6, 7]
+// une ligne par chiffre et le chiffre doit être répété autant de fois que sa valeur
+// Résultat attendu :
+// 1
+// 22
+// 333
+// 4444
+// 55555
+// 666666
+// 7777777

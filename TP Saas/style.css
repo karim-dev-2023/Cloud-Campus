@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6867ab;
+  font-family: "Montserrat", sans-serif;
+}
+
+header nav {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .logo {
+  margin-left: 65px;
+}
+header nav .options {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-right: 65px;
+}
+header nav .options a {
+  color: #486284;
+}
+
+main .sectionChallengePrincipal {
+  width: 80%;
+  margin: auto;
+}
+main .sectionChallengePrincipal h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+main .sectionChallengePrincipal .subtitle {
+  margin: 20px 0;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+main .sectionChallengePrincipal .challengesCards {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 40px;
+}
+main .sectionChallengePrincipal .challengesCards article {
+  background-color: #d4d9fc;
+  padding: 10px;
+  width: 471px;
+  height: 277px;
+  border-radius: 10px;
+}
+main .sectionChallengePrincipal .challengesCards article .headerCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+}
+main .sectionChallengePrincipal .challengesCards article .headerCard .starCards img {
+  height: 40px;
+}
+main .sectionChallengePrincipal .challengesCards article .headerCard .textCards {
+  margin-left: 15px;
+}
+main .sectionChallengePrincipal .challengesCards article .headerCard .textCards h2 {
+  font-weight: bold;
+}
+main .sectionChallengePrincipal .challengesCards article .headerCard .textCards h3 {
+  margin-top: 5px;
+}
+main .sectionChallengePrincipal .challengesCards article .descriptionsCard p {
+  text-align: justify;
+  line-height: 30px;
+  padding: 10px;
+}
+main .sectionChallengePrincipal .challengesCards article .btnCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+main .sectionChallengePrincipal .challengesCards article .btnCards a {
+  padding: 10px;
+  background-color: #ffb54d;
+  padding: 10px;
+  border-radius: 8px;
+  color: #404b5a;
+  font-weight: 700;
+  transition: 0.5s;
+  box-shadow: -1px 2px 1px black;
+  margin-right: 7px;
+}
+main .sectionChallengePrincipal .challengesCards article .btnCards a:hover {
+  background-color: #ffd8a0;
+}
+
+@media screen and (width <= 1314px) {
+  main .sectionChallengePrincipal .challengesCards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

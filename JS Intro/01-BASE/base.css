@@ -1,0 +1,24 @@
+body  { margin: 0; padding: 0; }
+* { box-sizing: border-box; font-family: sans-serif; }
+h2 { padding: 20px; background-color: midnightblue; color: white; }
+.conteneur { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    background-color: white; 
+    padding: 20px; 
+    border-bottom: 1px solid lightgray;
+}
+#sommaire { background-color: cadetBlue; }
+#chapitre1 { background-color: steelblue; }
+#chapitre2 { background-color: lightsteelblue; }
+#chapitre3 { background-color: powderblue; }
+#chapitre4 { background-color: lightblue; }
+#chapitre5 { background-color: skyblue; }
+#chapitre6 { background-color: lightskyblue; }
+#chapitre7 { background-color: deepskyblue; }
+#chapitre8 { background-color: dodgerblue; }
+#chapitre9 { background-color: cornflowerblue; }
+#chapitre10 { background-color: mediumslateblue; }
+#chapitre11 { background-color: royalblue; }
+#chapitre12 { background-color: blue; }
+#chapitre13 { background-color: navy; }
