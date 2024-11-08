@@ -1,0 +1,62 @@
+Créez une page calculatrice.html 
+    Cette page contient un formulaire avec :
+        un input type texte pour recevoir une première valeur
+        un input type texte pour recevoir une deuxième valeur
+        un select pour proposer les opérateurs (+, -, *, /, %, **)
+        un bouton de validation 
+
+    Lors du survol des input ou du select, affichez un texte expliquant ce que l'on attend, le texte doit disparaitre lorsque l'on sort du survol
+        exemple :
+            Veuillez saisir un chiffre (pour les input)
+            Veuillez sélectionner un opérateur (pour la liste déroulante)
+
+    Lors de la validation du form, on récupère les données du form et on affiche l'opération et le résultat
+        exemple :
+            "10 + 5 = 15"
+            "2 * 7 = 14"
+
+    Gestion des erreurs :
+        il faut controler que les valeurs soient bien numérique => sinon message d'erreur  (isNaN)
+        il faut controler que l'opérateur existe (en cas de modification de l'utilisateur du code html)
+        division par 0 impossible
+        l'utilisateur peut mettre des décimales, en fr on utilise la virgule, en revanche avec une virgule la valeur ne sera pas numérique il faut donc remplacer la virgule par un point (.replace()) pour le calcul mais à l'affichage on remet la virgule
+
+    Mettre deux bouton en haut de page
+        un pour afficher la calculatrice
+        un pour cacher la calculatrice
+        
+---------------------------------------
+
+Faire une page inscription
+    Cette page contient un formulaire avec les champs suivant :
+        Nom : input type texte
+        Prénom : input type texte
+        Pseudo : input type texte
+        Mot de passe : input type password
+        Confirmation du Mot de passe : input type password
+        Adresse : textarea 
+        Code postal : input type texte
+        Ville : input type texte
+        Téléphone : input type texte
+        + Bouton de validation 
+
+    L'utilisateur va faire ses saisies.
+    Lorsque l'utilisateur va sortir d'un champs il faut appliquer des controles :
+        Nom : ne doit pas être vide
+        Prénom : ne doit pas être vide
+        Pseudo : doit contenir entre 4 et 14 caractères
+        Mot de passe : ne doit pas être vide
+        Confirmation du Mot de passe : ne doit pas être vide et doit être la même chaine que dans le champs mot de passe
+        Adresse : ne doit pas être vide 
+        Code postal : doit contenir 5 chiffre
+        Ville : ne doit pas être vide
+        Téléphone : doit contenir 10 chiffre
+            si l'utilisateur utilise les points ou des espaces c'est à nous de les enlever (.replace())
+            exemple : 01.02.03.04.05 => 0102030405
+            exemple : 01 02 03 04 05 => 0102030405
+    
+    Si une information n'est pas correcte, on affiche un message d'erreur en dessous du champs qu'on enlève une fois corrigée.
+    
+    Il est possible que l'utilisateur ne rentre pas dans certains champs il faudra donc aussi faire le controle de tous les champs lors de la validation du form.
+        On bloque la validation lors du submit, on applique les controles et les messages d'erreur 
+        Si tout est ok on affiche un texte de validation

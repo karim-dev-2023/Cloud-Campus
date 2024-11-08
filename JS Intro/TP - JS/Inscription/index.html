@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inscription</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        transition: all 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container-fluid d-flex flex-column mt-5 justify-content-center align-items-center"
+    >
+    <div id="error" class="p-2 text-white text-center"></div>
+      <div class="row g-2 mt-1">
+        <div class="col-md">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="nom"
+              placeholder="Nom"
+              
+            />
+            <label for="floatingInputGrid">Nom</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="prenom"
+              placeholder="Prenom"
+              
+            />
+            <label for="floatingInputGrid">Prenom</label>
+          </div>
+        </div>
+      </div>
+      <div class="row g-2 mt-1">
+        <div class="col-md">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="pseudo"
+              placeholder="Pseudo"
+              
+            />
+            <label for="floatingInputGrid">Pseudo</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="tel"
+              placeholder="Téléphone"
+              
+            />
+            <label for="floatingInputGrid">Téléphone</label>
+          </div>
+        </div>
+      </div>
+      <div class="row g-2 mt-1">
+        <div class="col-md">
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="mdp"
+              placeholder="Mot de passe"
+              
+            />
+            <label for="floatingInputGrid">Mot de passe</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="cmdp"
+              placeholder="Confirmation de Mot de passe"
+              
+            />
+            <label for="floatingInputGrid">Confirmation de Mot de ..</label>
+          </div>
+        </div>
+      </div>
+      <div class="row g-2 mt-1">
+        <div class="col-md">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="adresse"
+              placeholder="Adresse"
+              
+            />
+            <label for="floatingInputGrid">Adresse</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="cp"
+              placeholder="Code Postal"
+              
+            />
+            <label for="floatingInputGrid">Code Postal</label>
+          </div>
+        </div>
+      </div>
+      <div class="row g-2 mt-1">
+        <div class="col-md">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="ville"
+              placeholder="Ville"
+              autocomplete="off"
+            />
+            <label for="floatingInputGrid">Ville</label>
+          </div>
+        </div>
+       
+      </div>
+      <input type="submit" class="btn btn-success disabled" id="submitBtn">
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./inscription.js"></script>
+  </body>
+</html>
